@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* 导航栏 */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ffff;
+}
+
+/* 顶部区域 */
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* 板块 */
+section {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 40px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* 头像 */
+img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
