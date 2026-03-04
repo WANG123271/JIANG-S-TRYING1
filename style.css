@@ -85,8 +85,9 @@ header h1 {
     font-weight: 600;
 }
 .hero-text {
-    background: rgba(0, 0, 0, 0.45);  /* 半透明暗底 */
-    padding: 40px 60px;
+    display: inline-block;     /* 关键！宽度由内容决定 */
+    background: rgba(0,0,0,0.45);
+    padding: 25px 40px;
     border-radius: 12px;
     color: white;
 }
