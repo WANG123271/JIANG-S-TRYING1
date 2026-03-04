@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Bioinformatics Lecture 1 Notes"
+---
 # 生物信息学 – 第1讲课堂笔记
 
 ## 一、什么是生物信息学？
