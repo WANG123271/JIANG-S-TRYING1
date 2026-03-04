@@ -90,6 +90,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 header {
     background: rgba(0,0,0,0.45);
     padding: 12px 0;
