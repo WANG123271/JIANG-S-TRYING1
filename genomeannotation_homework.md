@@ -40,9 +40,7 @@
 
 ### 2.1 采用的统计口径
 
-我们统一选择：
-- **GENCODE**：按 gene biotype 统计；
-- 也可能涉及**RNAcentral**：按 RNA 家族和物种整合注释统计。
+由于不同数据库（GENCODE、Ensembl、miRBase、RNAcentral）对非编码RNA的定义和统计标准不同，因此各类型数量存在一定差异。本作业以 GENCODE Release 49（2025）为主要参考标准。
 
 ### 2.2 表2.非编码 RNA 的主要细分类型
 
@@ -51,7 +49,7 @@
 | miRNA | 1,879（GENCODE v49）或 ~2,600（miRBase） | 通过与靶 mRNA 配对，抑制翻译或促进 mRNA 降解，参与发育、分化和肿瘤调控。 |
 | lncRNA | 35,899 | 长度通常 >200 nt，不编码蛋白，常通过染色质调控、转录调控或 RNA 互作影响基因表达。 |
 | snoRNA | 942 | 主要参与 rRNA、snRNA 等的化学修饰，指导 2'-O-甲基化或假尿苷化。 |
-| snRNA |1,901] | 是剪接体的重要组成部分，参与 pre-mRNA 剪接。 |
+| snRNA |1,901 | 是剪接体的重要组成部分，参与 pre-mRNA 剪接。 |
 | rRNA | 47（核基因）+ 2（线粒体）≈ 49 | 核糖体的核心结构和催化成分，负责蛋白质合成。 |
 | tRNA | 22（线粒体）+ 预测数百（~600，Ensembl） | 将特定氨基酸转运到核糖体，并通过反密码子识别 mRNA 密码子。 |
 | piRNA | >10,000（数据库注释级） | 主要在生殖细胞中抑制转座子，维持基因组稳定性。 |
@@ -60,6 +58,10 @@
 | Y RNA | ~4 | 参与 DNA 复制、RNA 稳定性及核糖核蛋白复合物相关过程。 |
 | vault RNA | 4 | 与 vault 复合体相关，可能参与 RNA 调控和细胞应答。 |
 | lincRNA / antisense RNA / sense intronic RNA 等 | 已包含在 lncRNA（35,899）中 | 属于长链非编码 RNA 的不同亚类，常参与转录调控和染色质调节。 |
+注：以上统计主要基于 GENCODE Release 49（2025，GRCh38.p14），其中 small ncRNA 总数为 7,563，lncRNA 为 35,899。不同数据库统计口径存在差异，例如 miRNA 在 GENCODE 中为 1,879，而 miRBase 收录约 2,600 条。
+根据 GENCODE Release 49（2025）统计，人类基因组中非编码 RNA 基因总数约为：
+35,899（lncRNA） + 7,563（small ncRNA） ≈ 43,000+。
+
 
 ### 2.3 主流非编码 RNA 的功能概述
 
@@ -90,3 +92,18 @@ rRNA 与 tRNA 是蛋白质翻译机器的核心分子，前者构成核糖体骨
 ├── 基因间区
 ├── 重复序列
 └── 非编码 RNA 基因
+
+### 数据来源：
+
+1. GENCODE Release 49 (2025, GRCh38.p14)
+   https://www.gencodegenes.org/human/stats.html
+
+2. Ensembl Release 115 (2025)
+   https://www.ensembl.org
+
+3. miRBase (latest release)
+   https://www.mirbase.org
+
+4. RNAcentral database
+   https://rnacentral.org
+
